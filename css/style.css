@@ -33,12 +33,36 @@ header{
 header .logo{
 	float: left;
 	width: 160px;
-	height: 40px;
-	background-color: #ccc; 
+	margin-top: -3%;
+}
+
+@media (max-width: 1024px) {
+	header .logo {
+		margin-top: -5%;
+	}
+}
+
+@media (max-width: 768px) {
+	header .logo {
+		margin-top: -6%;
+	}
+}
+
+@media (max-width: 648px) {
+	header .logo {
+		margin-top: -14%;
+	}
+}
+
+@media (max-width: 425px) {
+	header .logo {
+		margin-top: -12%;
+	}
 }
 
 header nav{
-	float: right; 
+	float: right;
+	margin-right: 10%;
 }
 
 header nav.mobile-menu{
@@ -146,10 +170,24 @@ section.sessao-1 .container{
 	font-size: 13px;
 }
 
+@media (max-width: 425px) {
+	.texto-sessao-1 p {
+		text-align: left;
+    margin-left: 20%;
+		font-size: 20px;
+	}
+}
+
 .texto-sessao-1 ul{
 	list-style-position: outside;
 	padding-left: 15px;
 	font-size: 15px;
+}
+
+@media (max-width: 425px) {
+	.texto-sessao-1 p {
+		padding-left: 15px;
+	}
 }
 
 .texto-sessao-1 ul li{
@@ -207,7 +245,9 @@ section.sessao-1 .container{
 .sessao-2 img{
 	position: relative;
 	top: 60px;
-	width: 100%;
+	width: 80%;
+	border-radius: 6px;
+	border: 5px solid #472563;
 	margin-top: 10px;
 }
 
@@ -220,7 +260,7 @@ section.sessao-1 .container{
 	width: 50%;
 	padding: 140px 0 90px 0;
 	color: white;
-	background-color: #835fa7; 
+	background-color: #835fa7;
 }
 
 .wraper-parte-1{
@@ -329,6 +369,7 @@ section.sessao-4{
 .form h2{
 	font-size: 23px;
 	font-weight: 300;
+	margin-bottom: 2%;
 	color: white;
 }
 
@@ -358,7 +399,7 @@ section.sessao-4{
 	width: 98%;
 	margin-top: 8px;
 	max-width: 480px;
-	padding: 15px;
+	padding: 8px;
 	border: 1px solid rgb(200,200,200);
 	height: 160px;
 }
@@ -538,11 +579,13 @@ section.sessao-4 .container{
 	float: none;
 	width: 100%;
 	color: white;
+	padding: 0 2%;
 }
 
 .form p{
 	display: inline-block;
 	float: none;
+	padding: 0;
 }
 
 .map-wraper{
